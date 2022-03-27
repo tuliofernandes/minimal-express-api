@@ -1,0 +1,32 @@
+{
+  "name": "minimal-express-api",
+  "description": "A minimalist boilerplate for a Node.js API, built on top of Express and written in TypeScript",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dev-start": "nodemon",
+  "build": "npx tsc",
+  "scripts": {
+    "dev:start": "nodemon",
+    "build": "npx tsc --outDir dist",
+    "lint:check": "eslint src/**/*.ts --env node",
+    "lint:fix": "eslint src/**/*.ts --env node --fix"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  }
+}
